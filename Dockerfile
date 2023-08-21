@@ -8,8 +8,9 @@ RUN apt-get install -y gcc \
         build-essential \
         gdb-multiarch \
         qemu-system-misc \
-        gcc-riscv64-linux-gnu \
-        binutils-riscv64-linux-gnu 
+        binutils-riscv64-linux-gnu
+
+RUN apt-get install -y gcc-riscv64-linux-gnu
 
 # Set the working directory
 WORKDIR /xv6
